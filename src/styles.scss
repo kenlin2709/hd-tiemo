@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+:root {
+  /* Primary palette */
+  --color-primary-dark: #1b4965; /* deep blue */
+  --color-primary-mid: #62b6cb; /* mid-tone teal */
+  --color-primary-light: #5fa8d3; /* gentle blue */
+
+  /* Background/highlight */
+  --color-bg-light: #cae9ff; /* pale sky */
+  --color-highlight-mint: #bee9e8; /* mint */
+}
+
+// 1. Bring in Bootstrap's functions & default variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// 2. Define your custom palette
+$my-colors: (
+  "highlight-mint": #bee9e8,
+  "primary-mid": #62b6cb,
+  "primary-dark": #1b4965,
+  "primary-lighter": #cae9ff,
+  "primary-light": #5fa8d3,
+);
+
+// 3. Merge your palette into Bootstrap's theme-colors
+//    This generates utility classes like .bg-own-light, .text-own-light, .border-own-light, etc.
+$theme-colors: map-merge($theme-colors, $my-colors);
+
+// 4. Finally import the rest of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.f-caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.f-small {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page {
+  min-height: calc(100vh - 132px); /* 56px is the height of the navbar */
+  display: flex;
+  justify-content: center;
+}

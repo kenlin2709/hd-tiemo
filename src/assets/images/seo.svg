@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Graph Background -->
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#f5f5f5"/>
+  
+  <!-- Bar Chart -->
+  <rect x="80" y="180" width="40" height="40" fill="#4CAF50"/>
+  <rect x="140" y="140" width="40" height="80" fill="#2196F3"/>
+  <rect x="200" y="100" width="40" height="120" fill="#FFC107"/>
+  <rect x="260" y="60" width="40" height="160" fill="#FF5722"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="280" cy="100" r="30" fill="none" stroke="#9C27B0" stroke-width="8"/>
+  <line x1="300" y1="120" x2="320" y2="140" stroke="#9C27B0" stroke-width="8"/>
+  
+  <!-- Keywords -->
+  <text x="70" y="90" font-family="Arial" font-size="14" fill="#666">SEO</text>
+  <text x="130" y="90" font-family="Arial" font-size="14" fill="#666">RANK</text>
+  <text x="190" y="90" font-family="Arial" font-size="14" fill="#666">TRAFFIC</text>
+</svg> 

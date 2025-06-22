@@ -1,0 +1,31 @@
+<div class="floating-social" [class.expanded]="isExpanded">
+  <!-- Mobile Toggle Button -->
+  <button
+    *ngIf="!(screenService.isDesktop$ | async)"
+    class="toggle-button"
+    (click)="toggleExpand()"
+    [attr.aria-expanded]="isExpanded"
+    [attr.aria-label]="'SOCIAL_MEDIA.TOGGLE' | translate"
+  >
+    <i class="bi bi-share"></i>
+  </button>
+
+  <!-- Social Media Links -->
+  <div
+    class="social-links"
+    [class.show]="isExpanded || (screenService.isDesktop$ | async)"
+  >
+    <a
+      *ngFor="let link of socialLinks"
+      [href]="link.url"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link"
+      [style.--animation-delay]="link.animationDelay"
+      [attr.aria-label]="link.translationKey | translate"
+      [title]="link.translationKey | translate"
+    >
+      <i [class]="link.icon"></i>
+    </a>
+  </div>
+</div>

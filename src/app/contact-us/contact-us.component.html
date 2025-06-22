@@ -1,0 +1,50 @@
+<div class="page">
+  <section class="contact-us-section py-4 my-auto">
+    <div
+      class="contact-us-container d-flex flex-column flex-md-row align-items-center justify-content-center mx-auto my-auto"
+    >
+      <div class="contact-us-detail px-4">
+        <h1 class="text-center my-4">{{ "CONTACT_PAGE.TITLE" | translate }}</h1>
+        <p class="f-caption mb-4">
+          {{ "CONTACT_PAGE.INTRO" | translate }}
+        </p>
+        <p class="f-caption mb-4">
+          {{ "CONTACT_PAGE.RESPONSE_TIME" | translate }}
+        </p>
+
+        <p class="fw-semibold mb-2">
+          {{ "CONTACT_PAGE.SUPPORT.TITLE" | translate }}
+        </p>
+        <p class="f-caption mb-4">
+          {{ "CONTACT_PAGE.SUPPORT.EMAIL" | translate }}
+        </p>
+
+        <p class="fw-semibold mb-2">
+          {{ "CONTACT_PAGE.SALES.TITLE" | translate }}
+        </p>
+        <p class="f-caption mb-4">
+          {{ "CONTACT_PAGE.SALES.DESC" | translate }}
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-sm-5">
+          <div>
+            <p class="f-small fw-semibold mb-2">
+              {{ "CONTACT_PAGE.SALES.EMAIL_TITLE" | translate }}
+            </p>
+            <p class="f-caption mb-4">
+              {{ "CONTACT_PAGE.SALES.EMAIL" | translate }}
+            </p>
+          </div>
+          <div>
+            <p class="f-small fw-semibold mb-2">
+              {{ "CONTACT_PAGE.SALES.PHONE_TITLE" | translate }}
+            </p>
+            <p class="f-caption mb-4">
+              {{ "CONTACT_PAGE.SALES.PHONE" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <app-inquiry-form></app-inquiry-form>
+    </div>
+  </section>
+</div>

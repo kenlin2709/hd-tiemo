@@ -1,0 +1,91 @@
+.hero {
+  height: 100vh;
+  background: url('https://tse1.mm.bing.net/th?id=OIP.tGyOBk9EzLjPxfdgVQqnFgHaE8&pid=Api') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    color: #ffd700;
+    max-width: 90%;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      background: #ffd700;
+      color: #000;
+      padding: 0.6rem 1.4rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+}
+
+.services-intro {
+  background: #111;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+
+  h2 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.features {
+  background: #000;
+  color: #ffd700;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+
+  .feature {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

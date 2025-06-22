@@ -1,0 +1,104 @@
+{
+  "HOME": "Home",
+  "SERVICES": "Services",
+  "PRICING": "Pricing",
+  "TEMPLATES": "Templates",
+  "CONTACT_US": "Contact Us",
+  "ENQUIRY": "Enquiry",
+  "LANGUAGE": "Language",
+  "SERVICE_PAGE": {
+    "TITLE": "Our Services",
+    "SUBTITLE": "We provide comprehensive web solutions to help your business thrive in the digital world",
+    "RESPONSIVE_WEB": {
+      "TITLE": "Responsive Web Design",
+      "DESCRIPTION": "Create beautiful, modern websites that work seamlessly across all devices",
+      "FEATURES": {
+        "MOBILE_FIRST": "Mobile-first approach for optimal user experience",
+        "CROSS_BROWSER": "Cross-browser compatibility",
+        "PERFORMANCE": "Optimized performance and loading speed"
+      }
+    },
+    "ECOMMERCE": {
+      "TITLE": "E-commerce Solutions",
+      "DESCRIPTION": "Build powerful online stores with secure payment processing and inventory management",
+      "FEATURES": {
+        "PAYMENT_INTEGRATION": "Secure payment gateway integration",
+        "INVENTORY": "Real-time inventory management",
+        "ANALYTICS": "Sales analytics and reporting"
+      }
+    },
+    "SEO": {
+      "TITLE": "Search Engine Optimization",
+      "DESCRIPTION": "Improve your website's visibility and ranking in search engine results",
+      "FEATURES": {
+        "OPTIMIZATION": "On-page and technical SEO optimization",
+        "RANKING": "Keyword research and ranking strategies",
+        "REPORTING": "Monthly performance reports"
+      }
+    },
+    "DEVELOPMENT": {
+      "TITLE": "Full-Stack Development",
+      "DESCRIPTION": "End-to-end web development services from design to deployment",
+      "FEATURES": {
+        "DESIGN": "Custom UI/UX design",
+        "DEVELOPMENT": "Frontend and backend development",
+        "DEPLOYMENT": "Secure deployment and hosting",
+        "MAINTENANCE": "Ongoing maintenance and updates"
+      }
+    },
+    "STATS": {
+      "TITLE": "Why Choose Us",
+      "PROJECTS": "Completed Projects",
+      "SATISFACTION": "Client Satisfaction",
+      "SUPPORT": "Support"
+    },
+    "CTA": {
+      "TITLE": "Ready to Start Your Project?",
+      "DESCRIPTION": "Contact us today for a free consultation and quote",
+      "BUTTON": "Get Started"
+    }
+  },
+  "CONTACT_PAGE": {
+    "TITLE": "Contact Us",
+    "INTRO": "Thank you for visiting Eternal Software Solutions. For more information on our products and services please feel free to contact one of our friendly staff members or complete the following form.",
+    "RESPONSE_TIME": "We will return all web site enquiries within two business day.",
+    "SUPPORT": {
+      "TITLE": "Support",
+      "EMAIL": "eternalsoftwaresolution@gmail.com"
+    },
+    "SALES": {
+      "TITLE": "Sales",
+      "DESC": "Looking to build a website or app for your business? Just fill out the form on the side—we'll be in touch shortly!",
+      "EMAIL_TITLE": "Sales Email",
+      "EMAIL": "eternalsoftwaresolution@gmail.com",
+      "PHONE_TITLE": "Contact number",
+      "PHONE": "0420428688"
+    }
+  },
+  "INQUIRY_FORM": {
+    "TITLE": "Inquiry Form",
+    "PREFERRED_NAME": "Preferred Name",
+    "PREFERRED_NAME_PLACEHOLDER": "Your name",
+    "EMAIL": "Email",
+    "EMAIL_PLACEHOLDER": "your@email.com",
+    "CONTACT_NUMBER": "Contact Number",
+    "CONTACT_NUMBER_PLACEHOLDER": "e.g. 0400 000 000",
+    "STATE": "State",
+    "STATE_PLACEHOLDER": "e.g. NSW",
+    "HEAR_ABOUT_US": "How did you hear about us?",
+    "WEBSITE_REQUIREMENTS": "Tell us about your website requirements",
+    "WEBSITE_REQUIREMENTS_PLACEHOLDER": "Brief description...",
+    "SUBMIT": "Submit",
+    "SENDING": "Sending...",
+    "SUCCESS_MESSAGE": "Inquiry sent successfully!",
+    "ERROR_MESSAGE": "Oops—something went wrong. Please try again.",
+    "SELECT_ONE": "Select one",
+    "HEAR_OPTIONS": {
+      "GOOGLE": "Google",
+      "SOCIAL_MEDIA": "Social Media",
+      "REFERRAL": "Referral",
+      "EVENT": "Event",
+      "OTHER": "Other"
+    }
+  }
+}

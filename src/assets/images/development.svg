@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Code Window -->
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2196F3"/>
+  <rect x="50" y="50" width="300" height="30" rx="8" fill="#1976D2"/>
+  <circle cx="70" cy="65" r="5" fill="#FF5722"/>
+  <circle cx="90" cy="65" r="5" fill="#FFC107"/>
+  <circle cx="110" cy="65" r="5" fill="#4CAF50"/>
+  
+  <!-- Code Lines -->
+  <rect x="70" y="100" width="120" height="10" rx="2" fill="#fff"/>
+  <rect x="70" y="120" width="200" height="10" rx="2" fill="#B3E5FC"/>
+  <rect x="70" y="140" width="160" height="10" rx="2" fill="#fff"/>
+  <rect x="70" y="160" width="180" height="10" rx="2" fill="#B3E5FC"/>
+  <rect x="70" y="180" width="140" height="10" rx="2" fill="#fff"/>
+  
+  <!-- Brackets -->
+  <text x="240" y="170" font-family="monospace" font-size="40" fill="#fff">{}</text>
+  <text x="290" y="170" font-family="monospace" font-size="40" fill="#fff">()</text>
+</svg> 

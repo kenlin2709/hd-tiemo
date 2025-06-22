@@ -1,0 +1,17 @@
+<li
+  class="nav-item"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: item().exact ?? true }"
+>
+  <a
+    class="nav-link text-nowrap"
+    [routerLink]="item().path"
+    [attr.data-bs-toggle]="
+      !(screenService.isDesktop$ | async) ? 'collapse' : null
+    "
+    [attr.data-bs-target]="'#navbarHeader'"
+    aria-controls="navbarHeader"
+  >
+    {{ item().labelKey | translate }}
+  </a>
+</li>

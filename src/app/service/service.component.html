@@ -1,0 +1,53 @@
+<div class="page">
+  <section class="services-container">
+    <div class="services-header">
+      <h1>{{ "SERVICE_PAGE.TITLE" | translate }}</h1>
+      <p>{{ "SERVICE_PAGE.SUBTITLE" | translate }}</p>
+    </div>
+
+    <div class="services-grid">
+      <app-service-card
+        *ngFor="let service of services; let i = index"
+        [title]="service.title"
+        [description]="service.description"
+        [imageUrl]="service.imageUrl"
+        [features]="service.features"
+        [reverse]="i % 2 === 1"
+      ></app-service-card>
+    </div>
+
+    <div class="services-footer">
+      <div class="stats-section">
+        <h2>{{ "SERVICE_PAGE.STATS.TITLE" | translate }}</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">{{
+              "SERVICE_PAGE.STATS.PROJECTS" | translate
+            }}</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">{{
+              "SERVICE_PAGE.STATS.SATISFACTION" | translate
+            }}</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">{{
+              "SERVICE_PAGE.STATS.SUPPORT" | translate
+            }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2>{{ "SERVICE_PAGE.CTA.TITLE" | translate }}</h2>
+        <p>{{ "SERVICE_PAGE.CTA.DESCRIPTION" | translate }}</p>
+        <button class="cta-button" routerLink="/contact-us">
+          {{ "SERVICE_PAGE.CTA.BUTTON" | translate }}
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,104 @@
+{
+  "HOME": "首页",
+  "SERVICES": "服务",
+  "PRICING": "价格",
+  "TEMPLATES": "模板",
+  "CONTACT_US": "联系我们",
+  "ENQUIRY": "咨询",
+  "LANGUAGE": "语言",
+  "SERVICE_PAGE": {
+    "TITLE": "我们的服务",
+    "SUBTITLE": "我们提供全面的网络解决方案，助力您的企业在数字世界蓬勃发展",
+    "RESPONSIVE_WEB": {
+      "TITLE": "响应式网页设计",
+      "DESCRIPTION": "创建美观、现代的网站，在所有设备上完美运行",
+      "FEATURES": {
+        "MOBILE_FIRST": "移动优先的设计方案",
+        "CROSS_BROWSER": "跨浏览器兼容性",
+        "PERFORMANCE": "优化性能和加载速度"
+      }
+    },
+    "ECOMMERCE": {
+      "TITLE": "电子商务解决方案",
+      "DESCRIPTION": "构建强大的在线商店，包含安全支付处理和库存管理",
+      "FEATURES": {
+        "PAYMENT_INTEGRATION": "安全支付网关集成",
+        "INVENTORY": "实时库存管理",
+        "ANALYTICS": "销售分析和报告"
+      }
+    },
+    "SEO": {
+      "TITLE": "搜索引擎优化",
+      "DESCRIPTION": "提高您网站在搜索引擎结果中的可见度和排名",
+      "FEATURES": {
+        "OPTIMIZATION": "页面和技术SEO优化",
+        "RANKING": "关键词研究和排名策略",
+        "REPORTING": "月度性能报告"
+      }
+    },
+    "DEVELOPMENT": {
+      "TITLE": "全栈开发",
+      "DESCRIPTION": "从设计到部署的端到端网络开发服务",
+      "FEATURES": {
+        "DESIGN": "自定义UI/UX设计",
+        "DEVELOPMENT": "前端和后端开发",
+        "DEPLOYMENT": "安全部署和托管",
+        "MAINTENANCE": "持续维护和更新"
+      }
+    },
+    "STATS": {
+      "TITLE": "为什么选择我们",
+      "PROJECTS": "完成项目",
+      "SATISFACTION": "客户满意度",
+      "SUPPORT": "全天候支持"
+    },
+    "CTA": {
+      "TITLE": "准备开始您的项目？",
+      "DESCRIPTION": "立即联系我们获取免费咨询和报价",
+      "BUTTON": "开始咨询"
+    }
+  },
+  "CONTACT_PAGE": {
+    "TITLE": "联系我们",
+    "INTRO": "感谢您访问Eternal软件解决方案。如需了解更多关于我们的产品和服务信息，请随时联系我们的工作人员或填写以下表单。",
+    "RESPONSE_TIME": "我们会在两个工作日内回复所有网站咨询。",
+    "SUPPORT": {
+      "TITLE": "技术支持",
+      "EMAIL": "eternalsoftwaresolution@gmail.com"
+    },
+    "SALES": {
+      "TITLE": "销售咨询",
+      "DESC": "想为您的企业建立网站或应用程序？只需填写旁边的表单，我们会尽快与您联系！",
+      "EMAIL_TITLE": "销售邮箱",
+      "EMAIL": "eternalsoftwaresolution@gmail.com",
+      "PHONE_TITLE": "联系电话",
+      "PHONE": "0420428688"
+    }
+  },
+  "INQUIRY_FORM": {
+    "TITLE": "咨询表单",
+    "PREFERRED_NAME": "姓名",
+    "PREFERRED_NAME_PLACEHOLDER": "请输入您的姓名",
+    "EMAIL": "电子邮箱",
+    "EMAIL_PLACEHOLDER": "your@email.com",
+    "CONTACT_NUMBER": "联系电话",
+    "CONTACT_NUMBER_PLACEHOLDER": "例如：0400 000 000",
+    "STATE": "州/地区",
+    "STATE_PLACEHOLDER": "例如：NSW",
+    "HEAR_ABOUT_US": "您是如何了解到我们的？",
+    "WEBSITE_REQUIREMENTS": "请告诉我们您的网站需求",
+    "WEBSITE_REQUIREMENTS_PLACEHOLDER": "简要描述...",
+    "SUBMIT": "提交",
+    "SENDING": "提交中...",
+    "SUCCESS_MESSAGE": "咨询已成功发送！",
+    "ERROR_MESSAGE": "抱歉，出现了问题。请重试。",
+    "SELECT_ONE": "请选择",
+    "HEAR_OPTIONS": {
+      "GOOGLE": "谷歌",
+      "SOCIAL_MEDIA": "社交媒体",
+      "REFERRAL": "推荐",
+      "EVENT": "活动",
+      "OTHER": "其他"
+    }
+  }
+}

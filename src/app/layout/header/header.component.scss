@@ -1,0 +1,31 @@
+.navbar-nav {
+  align-items: center;
+  
+}
+
+// logo sizing
+.logo-img {
+  width: auto;
+  display: block;
+  height: 50px; // Default size for desktop
+
+  @media (max-width: 768px) {
+    height: 45px; // Smaller size for tablets
+  }
+
+  @media (max-width: 576px) {
+    height: 35px; // Even smaller for mobile phones
+  }
+}
+
+// Enquiry button
+.btn-primary {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--color-primary-mid);
+    border-color: var(--color-primary-mid);
+  }
+}

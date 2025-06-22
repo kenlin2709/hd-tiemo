@@ -1,0 +1,148 @@
+.home-hero__content {
+  text-align: center;
+  width: 100vw;                // Full horizontal width
+  min-height: 50vh;            // Optional: minimum vertical height
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  margin-left: calc(50% - 50vw); // Ensures true edge-to-edge if inside a centered container
+}
+
+.home-hero__content h1,
+.home-hero__price,
+.home-hero__amount {
+  color: #fff;
+}
+
+
+.home-hero__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+  flex-wrap: wrap; // allows wrapping on small screens
+}
+
+.quote-btn__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.quote-btn,
+.included-btn {
+  min-width: 220px;         // Ensures both buttons have the same minimum width
+  justify-content: center;  // Centers content inside the button
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 24px / 50%; // Rectangular with rounded sides
+  margin-right: 0;           // Remove extra margin
+}
+
+.quote-btn {
+  background: #1B4965; 
+  color: #fff;
+}
+
+.included-btn {
+  background: #5FA8D3; 
+  color: #fff;
+}
+
+.home-hero__price-row {
+  display: flex;
+  align-items: flex-end; // aligns bottoms
+  justify-content: center;
+  gap: 16px;
+}
+
+.home-hero__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 8px; // Try 8px, adjust as needed
+}
+
+.home-hero__amount {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.mac-frame-container {
+  width: 400px;
+  max-width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+  position: relative; // or just remove this line
+  top: 200px;
+  left: unset;
+  bottom: unset;
+  transform: none;
+  z-index: 2;
+}
+
+.mac-frame {
+  position: relative;
+  width: 100%;
+}
+
+.mac-frame-img {
+  width: 100%;
+  display: block;
+}
+
+.mac-desktop-img {
+  position: absolute;
+  top: 3.5%;      // Adjust until the top edge aligns with the Mac screen
+  left: 2.5%;     // Adjust until the left edge aligns with the Mac screen
+  width: 94%;      // Adjust until the right edge aligns with the Mac screen
+  height: 69%;     // Adjust until the bottom edge aligns with the Mac screen
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mac-dots {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: #1B4965;
+}
+
+@media (max-width: 600px) {
+  .home-hero__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .quote-btn,
+  .included-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

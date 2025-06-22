@@ -1,0 +1,129 @@
+:host {
+  display: block;
+  position: fixed;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.floating-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.25rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--bs-white);
+  text-decoration: none;
+  background-color: rgba(95, 168, 211, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: rgba(27, 73, 101, 0.75);
+    color: var(--bs-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  i {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Mobile styles
+@media (max-width: 991.98px) {
+  :host {
+    left: auto;
+    right: 0.5rem;
+    bottom: 1rem;
+    top: auto;
+    transform: none;
+  }
+
+  .floating-social {
+    align-items: flex-end;
+  }
+
+  .toggle-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(95, 168, 211, 0.6);
+    backdrop-filter: blur(4px);
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      background-color: rgba(27, 73, 101, 0.75);
+    }
+
+    i {
+      font-size: 1.25rem;
+    }
+  }
+
+  .social-links {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    align-items: center;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+
+      .social-link {
+        animation: popOut 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        animation-delay: var(--animation-delay, 0s);
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
+  }
+}

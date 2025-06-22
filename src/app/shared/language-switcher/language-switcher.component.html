@@ -1,0 +1,35 @@
+<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle text-white"
+    id="languageDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    🌐 {{ "LANGUAGE" | translate }}
+  </a>
+  <ul
+    class="dropdown-menu dropdown-menu-end"
+    aria-labelledby="languageDropdown"
+  >
+    @for (lang of languages; track $index) {
+    <li>
+      <button
+        type="button"
+        class="dropdown-item d-flex justify-content-between align-items-center"
+        (click)="select(lang.code)"
+        [attr.data-bs-toggle]="
+          !(screenService.isDesktop$ | async) ? 'collapse' : null
+        "
+        [attr.data-bs-target]="'#navbarHeader'"
+        aria-controls="navbarHeader"
+      >
+        {{ lang.label }}
+        @if (currentLanguage() === lang.code) {
+        <span class="check-icon">✔︎</span>
+        }
+      </button>
+    </li>
+    }
+  </ul>
+</li>

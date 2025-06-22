@@ -1,0 +1,61 @@
+<div class="form-container">
+  <form [formGroup]="inquiryForm" (ngSubmit)="onSubmit()">
+    <h2>{{ "INQUIRY_FORM.TITLE" | translate }}</h2>
+
+    <label>{{ "INQUIRY_FORM.PREFERRED_NAME" | translate }}</label>
+    <input
+      formControlName="preferredName"
+      type="text"
+      [placeholder]="'INQUIRY_FORM.PREFERRED_NAME_PLACEHOLDER' | translate"
+    />
+
+    <label>{{ "INQUIRY_FORM.EMAIL" | translate }}</label>
+    <input
+      formControlName="email"
+      type="email"
+      [placeholder]="'INQUIRY_FORM.EMAIL_PLACEHOLDER' | translate"
+    />
+
+    <label>{{ "INQUIRY_FORM.CONTACT_NUMBER" | translate }}</label>
+    <input
+      formControlName="contactNumber"
+      type="tel"
+      [placeholder]="'INQUIRY_FORM.CONTACT_NUMBER_PLACEHOLDER' | translate"
+    />
+
+    <label>{{ "INQUIRY_FORM.STATE" | translate }}</label>
+    <input
+      formControlName="state"
+      type="text"
+      [placeholder]="'INQUIRY_FORM.STATE_PLACEHOLDER' | translate"
+    />
+
+    <label>{{ "INQUIRY_FORM.HEAR_ABOUT_US" | translate }}</label>
+    <select formControlName="hearAboutUs">
+      <option value="" disabled>
+        {{ "INQUIRY_FORM.SELECT_ONE" | translate }}
+      </option>
+      <option *ngFor="let option of hearOptions" [value]="option.value">
+        {{ option.translationKey | translate }}
+      </option>
+    </select>
+
+    <label>{{ "INQUIRY_FORM.WEBSITE_REQUIREMENTS" | translate }}</label>
+    <textarea
+      formControlName="websiteRequirements"
+      rows="4"
+      [placeholder]="
+        'INQUIRY_FORM.WEBSITE_REQUIREMENTS_PLACEHOLDER' | translate
+      "
+    ></textarea>
+
+    <button [disabled]="loading || inquiryForm.invalid" type="submit">
+      <ng-container *ngIf="!loading; else loadingTpl">{{
+        "INQUIRY_FORM.SUBMIT" | translate
+      }}</ng-container>
+      <ng-template #loadingTpl>
+        <span class="spinner"></span> {{ "INQUIRY_FORM.SENDING" | translate }}
+      </ng-template>
+    </button>
+  </form>
+</div>

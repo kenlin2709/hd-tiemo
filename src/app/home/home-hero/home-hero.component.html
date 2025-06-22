@@ -1,0 +1,34 @@
+<div class="home-hero__content">
+  <h1 style="margin-top: 100px;">
+    Lead Generating Website Design<br>
+  </h1>
+  <div class="home-hero__price-row">
+    <span class="home-hero__price">from only</span>
+    <span class="home-hero__amount">$895</span>
+  </div>
+  <div class="home-hero__buttons">
+    <button class="quote-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="quote-btn__icon">
+        <path d="M20 8v10H4V8l8 5 8-5zm0-2H4l8 5 8-5z"/>
+      </svg>
+      Get a free Quote
+    </button>
+    <button class="included-btn">
+      See what's included
+    </button>
+  </div>
+  <div class="mac-frame-container">
+    <div class="mac-frame">
+      <img [src]="selectedDesktop" alt="Desktop Screenshot" class="mac-desktop-img">
+      <img [src]="macFrameUrl" alt="Mac Frame" class="mac-frame-img">
+    </div>
+    <div class="mac-dots">
+      <span
+        *ngFor="let img of desktopImages; let i = index"
+        class="dot"
+        [class.active]="selectedDesktop === img"
+        (click)="selectDesktop(img)">
+      </span>
+    </div>
+  </div>
+</div>

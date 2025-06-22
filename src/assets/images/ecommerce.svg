@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shopping Cart -->
+  <circle cx="200" cy="150" r="100" fill="#2196F3" />
+  <path d="M150 170 L180 170 L190 130 L240 130 L250 170 L160 170" fill="none" stroke="#fff" stroke-width="8"/>
+  <circle cx="175" cy="190" r="10" fill="#fff"/>
+  <circle cx="225" cy="190" r="10" fill="#fff"/>
+  
+  <!-- Dollar Sign -->
+  <text x="190" y="160" font-family="Arial" font-size="40" fill="#fff">$</text>
+  
+  <!-- Shopping Items -->
+  <rect x="120" y="100" width="30" height="30" rx="4" fill="#FF5722"/>
+  <rect x="250" y="100" width="30" height="30" rx="4" fill="#4CAF50"/>
+  <rect x="160" y="80" width="30" height="30" rx="4" fill="#FFC107"/>
+  <rect x="210" y="80" width="30" height="30" rx="4" fill="#9C27B0"/>
+</svg> 
