@@ -1,0 +1,13 @@
+<div class="modal-backdrop" *ngIf="isOpen">
+  <div class="modal d-block">
+    <span class="close" (click)="close()">&times;</span>
+    <h2>Book a Service</h2>
+    <form #form="ngForm" (ngSubmit)="submit(form)">
+      <input type="text" name="name" ngModel placeholder="Your Name" required />
+      <input type="tel" name="phone" ngModel placeholder="Phone Number" required />
+      <input type="email" name="email" ngModel placeholder="Email" required />
+      <textarea name="message" ngModel placeholder="Additional Info"></textarea>
+      <button type="submit" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
+</div>

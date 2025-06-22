@@ -1,50 +1,57 @@
-<div class="page">
-  <section class="contact-us-section py-4 my-auto">
-    <div
-      class="contact-us-container d-flex flex-column flex-md-row align-items-center justify-content-center mx-auto my-auto"
-    >
-      <div class="contact-us-detail px-4">
-        <h1 class="text-center my-4">{{ "CONTACT_PAGE.TITLE" | translate }}</h1>
-        <p class="f-caption mb-4">
-          {{ "CONTACT_PAGE.INTRO" | translate }}
-        </p>
-        <p class="f-caption mb-4">
-          {{ "CONTACT_PAGE.RESPONSE_TIME" | translate }}
-        </p>
+<section class="contact-container">
+  <div class="left-panel">
+    <h2>Visit Our Studio</h2>
+    <p>📍 88 Prestige Drive, Shanghai</p>
+    <p>📞 +86 138 0000 0000</p>
+    <p>✉️ contact&#64;hdprotectors.com</p>
 
-        <p class="fw-semibold mb-2">
-          {{ "CONTACT_PAGE.SUPPORT.TITLE" | translate }}
-        </p>
-        <p class="f-caption mb-4">
-          {{ "CONTACT_PAGE.SUPPORT.EMAIL" | translate }}
-        </p>
-
-        <p class="fw-semibold mb-2">
-          {{ "CONTACT_PAGE.SALES.TITLE" | translate }}
-        </p>
-        <p class="f-caption mb-4">
-          {{ "CONTACT_PAGE.SALES.DESC" | translate }}
-        </p>
-        <div class="d-flex flex-column flex-sm-row gap-sm-5">
-          <div>
-            <p class="f-small fw-semibold mb-2">
-              {{ "CONTACT_PAGE.SALES.EMAIL_TITLE" | translate }}
-            </p>
-            <p class="f-caption mb-4">
-              {{ "CONTACT_PAGE.SALES.EMAIL" | translate }}
-            </p>
-          </div>
-          <div>
-            <p class="f-small fw-semibold mb-2">
-              {{ "CONTACT_PAGE.SALES.PHONE_TITLE" | translate }}
-            </p>
-            <p class="f-caption mb-4">
-              {{ "CONTACT_PAGE.SALES.PHONE" | translate }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <app-inquiry-form></app-inquiry-form>
+    <div class="map">
+      <iframe
+        src="https://maps.google.com/maps?q=Shanghai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
     </div>
-  </section>
-</div>
+  </div>
+
+  <div class="right-panel">
+    <h2>Send Us a Message</h2>
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          id="name"
+          name="name"
+          ngModel
+          required
+          placeholder="Your Name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          ngModel
+          required
+          placeholder="example@email.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          ngModel
+          required
+          placeholder="How can we help you?"
+        ></textarea>
+      </div>
+
+      <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+    </form>
+  </div>
+</section>

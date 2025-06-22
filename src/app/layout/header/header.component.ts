@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
@@ -10,6 +10,7 @@ import {
   LangCode,
 } from '../../shared/language-switcher/language-switcher.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { BookingModalComponent } from 'src/app/shared/booking-modal/booking-modal.component';
 
 @Component({
   selector: 'app-header',
@@ -20,11 +21,13 @@ import { TranslateModule } from '@ngx-translate/core';
     NavLinkComponent,
     LanguageSwitcherComponent,
     TranslateModule,
-  ],
+    BookingModalComponent
+],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  @ViewChild('bookingModal') bookingModal!: BookingModalComponent;
   currentLanguage: LangCode = 'en';
   navItems: NavItem[] = [
     { path: '/', labelKey: 'HOME', exact: true },
@@ -45,6 +48,26 @@ export class HeaderComponent {
       this.translateService.use(this.currentLanguage);
     }
   }
+
+  isMobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
+
+
+  openModal() {
+    this.bookingModal.open();
+  }
+  handleBooking(data: any) {
+    console.log('Booking received:', data);
+    // TODO: Send to backend
+  }
+
 
   changeLanguage(lang: LangCode) {
     this.currentLanguage = lang;

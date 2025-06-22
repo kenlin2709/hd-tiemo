@@ -1,0 +1,51 @@
+<section class="about-hero">
+  <div class="container">
+    <h1>About HD Protectors</h1>
+    <p>Crafting premium automotive protection through precision, expertise, and passion.</p>
+  </div>
+</section>
+
+<section class="about-story">
+  <div class="text">
+    <h2>Our Story</h2>
+    <p>
+      Founded by automotive enthusiasts with over a decade of hands-on experience,
+      HD Protectors was built to raise the standard of car care in China.
+      Our name — “HD” — stands for 海盗 (Pirate), reflecting our bold commitment
+      to innovation, adventure, and uncompromising quality.
+    </p>
+    <p>
+      Whether it’s invisible PPF, color wraps, or ceramic coatings, we apply every layer with the
+      precision of a craftsman and the pride of an artist.
+    </p>
+  </div>
+  <div class="image">
+    <img src="assets/images/show-room.png" alt="HD Protectors Showroom" />
+  </div>
+</section>
+
+<section class="about-values">
+  <h2>What Drives Us</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <h3>Precision</h3>
+      <p>We treat every vehicle as a masterpiece — no bubbles, no edges, just perfect results.</p>
+    </div>
+    <div class="value-card">
+      <h3>Trust</h3>
+      <p>Transparent service. Certified installers. Backed by warranty and reputation.</p>
+    </div>
+    <div class="value-card">
+      <h3>Passion</h3>
+      <p>We love cars. That’s why we protect them like they’re our own.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-cta">
+  <h2>Meet us in person</h2>
+  <p>Visit our showroom and get a free consultation for your vehicle.</p>
+  <button (click)="openBooking()">Book Appointment</button>
+</section>
+
+<app-booking-modal #bookingModal (submitted)="handleBooking($event)"></app-booking-modal>

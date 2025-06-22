@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { BookingModalComponent } from '../shared/booking-modal/booking-modal.component';
 
 interface ServiceItem {
   title: string;
@@ -14,11 +15,16 @@ interface ServiceItem {
 @Component({
   selector: 'app-service',
   standalone: true,
-  imports: [CommonModule, TranslateModule, RouterModule, ServiceCardComponent],
+  imports: [CommonModule, TranslateModule, RouterModule, ServiceCardComponent, BookingModalComponent],
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.scss'],
 })
 export class ServiceComponent implements OnInit {
+  @ViewChild('bookingModal') bookingModal!: BookingModalComponent;
+
+  openBooking() {
+    this.bookingModal.open();
+  }
   services: ServiceItem[] = [
     {
       title: 'SERVICE_PAGE.RESPONSIVE_WEB.TITLE',

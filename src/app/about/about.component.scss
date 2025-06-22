@@ -1,0 +1,130 @@
+$gold: #ffd700;
+$black: #000;
+$dark: #111;
+$white: #fff;
+$gray: #ccc;
+
+.about-hero {
+  background: $black;
+  color: $gold;
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: $gray;
+    font-size: 1.1rem;
+  }
+}
+
+.about-story {
+  display: flex;
+  flex-wrap: wrap;
+  background: $dark;
+  color: $white;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  align-items: center;
+
+  .text {
+    flex: 1 1 300px;
+
+    h2 {
+      color: $gold;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: $gray;
+    }
+  }
+
+  .image {
+    flex: 1 1 300px;
+
+    img {
+      width: 100%;
+      border-radius: 0.8rem;
+      box-shadow: 0 0 16px rgba($gold, 0.1);
+    }
+  }
+}
+
+.about-values {
+  background: $black;
+  color: $gold;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+
+    .value-card {
+      background: $dark;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 12px rgba($gold, 0.05);
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: $white;
+      }
+
+      p {
+        color: $gray;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.about-cta {
+  background: $black;
+  color: $gold;
+  text-align: center;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $gray;
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    background: $gold;
+    color: $black;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $white;
+    }
+  }
+}

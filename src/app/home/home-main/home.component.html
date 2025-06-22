@@ -1,27 +1,87 @@
+<!-- Hero Section -->
 <section class="hero">
   <div class="overlay">
-    <h1>极致光影防护</h1>
-    <p>专注高端汽车贴膜服务</p>
-    <button>立即预约</button>
+    <h1>Ultimate Light & Shadow Protection</h1>
+    <p>Premium Automotive Window Film & Paint Protection</p>
+    <button (click)="openBooking()">Book Now</button>
   </div>
 </section>
 
+<!-- Services Introduction -->
 <section class="services-intro">
-  <h2>我们的服务</h2>
-  <p>我们提供专业全车贴膜、隐形车衣与玻璃隔热膜服务，提升爱车颜值，长效保护。</p>
+  <h2>Our Services</h2>
+  <p>We specialize in high-performance automotive window films, paint protection film (PPF), and thermal insulation solutions — designed to elevate style and safeguard your vehicle.</p>
 </section>
 
+<!-- Feature Highlights -->
 <section class="features">
   <div class="feature">
-    <h3>专业技师</h3>
-    <p>10+年施工经验，精准贴合每一寸车身。</p>
+    <h3>Expert Technicians</h3>
+    <p>Over a decade of hands-on experience with precision film installation.</p>
   </div>
   <div class="feature">
-    <h3>顶级材料</h3>
-    <p>使用美国原装进口膜料，持久耐用。</p>
+    <h3>Top-Tier Materials</h3>
+    <p>We use U.S.-imported film backed by certifications and durability guarantees.</p>
   </div>
   <div class="feature">
-    <h3>贴心服务</h3>
-    <p>一对一方案定制，让您购贴无忧。</p>
+    <h3>Personalized Care</h3>
+    <p>Tailored consultation and one-on-one service for every vehicle.</p>
   </div>
 </section>
+
+<!-- Brand Philosophy -->
+<section class="brand-intro">
+  <div class="container">
+    <h2>Our Philosophy</h2>
+    <p>We believe in more than just film. Every car we protect is a relationship we value, built on quality, trust, and craftsmanship.</p>
+    <img src="assets/images/logo-gold.png" alt="Brand Logo" class="brand-logo" />
+  </div>
+</section>
+
+<!-- Certifications & Partners -->
+<section class="certifications">
+  <h2>Certified & Trusted</h2>
+  <div class="cert-list">
+    <img src="assets/images/ppf-cert.png" alt="PPF Certified" />
+    <img src="assets/images/detailing.png" alt="3M Authorized" />
+    <img src="assets/images/color-wrap.png" alt="Technician Certified" />
+  </div>
+</section>
+
+<!-- Case Gallery -->
+<section class="cases">
+  <h2>Featured Projects</h2>
+  <div class="case-gallery">
+    <img src="/assets/images/case1.png" alt="Tesla Model Y - Full Wrap" />
+    <img src="/assets/images/case2.png" alt="BMW X5 - Front PPF" />
+    <img src="assets/images/case1.png" alt="Mercedes E-Class - Tint & Protection" />
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>Client Feedback</h2>
+  <div class="testimonial-list">
+    <blockquote>
+      “Stunning results! The tint not only looks amazing but keeps my cabin noticeably cooler.”
+      <cite>— Alex, Tesla Model Y Owner</cite>
+    </blockquote>
+    <blockquote>
+      “Professional service from start to finish. Truly premium quality.”
+      <cite>— Michelle, BMW X5 Owner</cite>
+    </blockquote>
+    <blockquote>
+      “The film finish is flawless. Every curve of the car was treated like art.”
+      <cite>— Daniel, Mercedes E-Class Owner</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Final Call to Action -->
+<section class="cta">
+  <h2>Ready to Upgrade Your Vehicle?</h2>
+  <button (click)="openBooking()">Schedule Your Appointment</button>
+</section>
+
+
+<app-booking-modal #bookingModal (submitted)="handleBooking($event)"></app-booking-modal>
