@@ -2,12 +2,13 @@
   <!-- Mobile Toggle Button -->
   <button
     *ngIf="!(screenService.isDesktop$ | async)"
+    type="button"
     class="toggle-button"
-    (click)="toggleExpand()"
+    (click)="toggleExpand($event)"
     [attr.aria-expanded]="isExpanded"
     [attr.aria-label]="'SOCIAL_MEDIA.TOGGLE' | translate"
   >
-    <i class="bi bi-share"></i>
+    <i [class]="isExpanded ? 'bi bi-x-lg' : 'bi bi-share'"></i>
   </button>
 
   <!-- Social Media Links -->

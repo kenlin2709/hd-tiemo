@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScreenService } from '../../services/screen.service';
@@ -20,6 +20,7 @@ interface SocialMediaLink {
 })
 export class FloatingSocialComponent {
   screenService = inject(ScreenService);
+  private elementRef = inject(ElementRef);
   isExpanded = false;
 
   socialLinks: SocialMediaLink[] = [
@@ -53,7 +54,16 @@ export class FloatingSocialComponent {
     },
   ];
 
-  toggleExpand(): void {
+  toggleExpand(event?: Event): void {
+    event?.stopPropagation();
     this.isExpanded = !this.isExpanded;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    if (!this.isExpanded) return;
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isExpanded = false;
+    }
   }
 }
