@@ -44,6 +44,13 @@ export class FloatingSocialComponent {
       translationKey: 'SOCIAL_MEDIA.LINKEDIN',
       animationDelay: '0.2s',
     },
+    {
+      name: 'WhatsApp',
+      url: 'https://wa.me/61420428688',
+      icon: 'bi bi-whatsapp',
+      translationKey: 'SOCIAL_MEDIA.WHATSAPP',
+      animationDelay: '0.3s',
+    },
   ];
 
   toggleExpand(): void {
