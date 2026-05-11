@@ -7,7 +7,7 @@ interface SocialMediaLink {
   name: string;
   url: string;
   icon: string;
-  translationKey?: string;
+  translationKey: string;
   animationDelay?: string;
 }
 
